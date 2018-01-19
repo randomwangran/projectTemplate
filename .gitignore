@@ -1,0 +1,35 @@
+# ignore deepth 1
+/*/*.obj
+/*/*.png
+/*/*.msh
+/*/*#
+/*/*~
+/*/*/*~
+/*/*/*#
+/*/*/*.swp
+/*/*.out
+/*/postProcessing/
+/*/processor*/
+/*/test.pbs.*
+/*/*.gz
+/*/constant/polyMesh/
+/*/[1-9]*
+/*/*.[1-9]*
+
+# ignore deepth 2
+/*/*/*.obj
+/*/*/*.png
+/*/*/*.msh
+/*/*/*#
+/*/*/*~
+/*/*/*/*~
+/*/*/*/*#
+/*/*/*/*.swp
+/*/*/*.out
+/*/*/postProcessing/
+/*/*/processor*/
+/*/*/test.pbs.*
+/*/*/*.gz
+/*/*/constant/polyMesh/
+/*/*/[1-9]*
+/*/*/*.[1-9]*
