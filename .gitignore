@@ -1,4 +1,6 @@
 # ignore deepth 1
+*~
+#*
 /*/*.obj
 /*/*.png
 /*/*.msh
