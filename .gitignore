@@ -37,6 +37,7 @@
 /*/*/constant/polyMesh/
 /*/*/[1-9]*
 /*/*/*.[1-9]*
+/*/*/log.pisoFoam
 
 # ignore deepth 3
 /*/*/*/.#*
@@ -56,3 +57,4 @@
 /*/*/*/constant/polyMesh/
 /*/*/*/[1-9]*
 /*/*/*/*.[1-9]*
+/*/*/*/log.pisoFoam
