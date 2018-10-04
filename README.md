@@ -4,6 +4,8 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 
 # Requirments
 
+Put the follwoing functions in your `~/.bashrc`:
+
 ```sh
 function Allrun()
 {   
