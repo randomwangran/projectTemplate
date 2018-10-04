@@ -39,7 +39,7 @@ function catTodayAllrunLog()
 }
 ```
 
-# Useage
+# Usage
 
 Put all the commends in the `Allrun.sh` script and then executed `Allrun.sh` by typing:
 
