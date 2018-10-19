@@ -58,3 +58,18 @@
 /*/*/*/[1-9]*
 /*/*/*/*.[1-9]*
 /*/*/*/log.pisoFoam
+
+# latex related
+*.xml
+*.pdf
+*.tex~
+*.aux
+*.tex~
+*.out
+*.lot
+*.aux
+*.lof
+*.log
+*.toc
+_region_*
+*#
