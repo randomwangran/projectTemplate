@@ -2,9 +2,20 @@ A workflow to execute and document text based simulations configurations and res
 
 Here's an example using this [template](https://github.com/randomwangran/lengthEffect/tree/master/workingFolder).
 
+# Workflow example
+
+- create a repository named `myProject` on GitHub
+- execute clone script:
+    
+    `ranCloneTemplate myProject`
+    
+
 # Requirments
 
-Put the follwoing functions in your `~/.bashrc`:
+
+## auxiliary scripts
+
+put the follwoing functions in your `~/.bashrc`:
 
 ```sh
 function Allrun()
@@ -38,6 +49,21 @@ function catTodayAllrunLog()
     grep -w "$(date "+%a %b %d")" log.Allrun
 }
 ```
+
+`ranCloneTemplate`:
+
+```ranCloneTemplate
+git clone git@github.com:randomwangran/projectTemplate.git
+git clone git@github.com:randomwangran/$1.git
+cd ./projectTemplate &&
+rm -rf .git
+cd ..
+mv projectTemplate $1.bak
+cp -rf $1.bak/* $1
+cp $1.bak/.gitignore $1
+rm -rf $1.bak
+```
+
 
 # Usage
 
