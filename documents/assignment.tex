@@ -1,0 +1,185 @@
+
+%%% Template originaly created by Karol Kozioł (mail@karol-koziol.net) and modified for ShareLaTeX use
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+
+\usepackage{tgtermes}
+
+\usepackage[
+pdftitle={Course Project Discussion}, 
+pdfauthor={Li Zhi, Wang Ran,University of Windsor},
+colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,bookmarks=true,
+bookmarksopenlevel=2]{hyperref}
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{gensymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%biaogexiangguan
+\usepackage{array}
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=20mm}
+
+
+\linespread{1.3}
+
+\newcommand{\linia}{\rule{\linewidth}{2pt}}
+
+% custom theorems if needed
+\newtheoremstyle{mytheor}
+    {1ex}{1ex}{\normalfont}{0pt}{\scshape}{.}{1ex}
+    {{\thmname{#1 }}{\thmnumber{#2}}{\thmnote{ (#3)}}}
+
+\theoremstyle{mytheor}
+\newtheorem{defi}{Step}
+\newtheorem{defi2}{Step}
+\newtheorem{defithree}{}
+\newtheorem{defifour}{}
+\newtheorem{defifive}{}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author \hfill \@date
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+%%%
+
+% custom footers and headers
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Flow Measurements}
+\cfoot{}
+\rfoot{Page \thepage\ /\ \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%
+
+%%%----------%%%----------%%%----------%%%----------%%%
+\begin{document}
+
+\title{assignment 1}
+
+\author{Name, \textnumero{}xxx-xxxx, University of XX}
+
+\date{05/21/2016}
+
+\maketitle
+\section{Problem 1}
+\begin{defi}
+Find mean value
+\end{defi}
+\begin{equation}
+    \begin{array}{rcl}
+           \overline{d} & = &  \displaystyle\sum\limits_{i=1}^{10} \frac{d_i}{10} 
+              =   49380 \quad kJ/kg
+    \end{array}
+\end{equation}
+\begin{defi}
+Find measurement bias limit
+\end{defi}
+Calorimeter does not introduce any precision error into the measurement, so instrument error is zero $U_c = 0$. Zero order uncertainty($U_0$) is equal to $2500/2 = 1250$ kJ/kg.
+\begin{equation}
+    \begin{array}{rcl}
+           B & = &  \sqrt{U^2_0 + U^2_c} = 1250 \quad kJ/kg
+    \end{array}
+\end{equation}
+\begin{defi}
+Find corrected sample standard deviation:
+\end{defi}
+\begin{equation}
+    \begin{array}{rcl}
+           s_d & = &  \sqrt{\frac{\sum\limits_{i=1}^{10}(d_i-\bar{d})^2}{N-1}} = 537.07 \quad kJ/kg
+    \end{array}
+\end{equation}
+Precision: 
+\begin{equation}
+    \begin{array}{rcl}
+           \rho & = & \frac{s_d}{\sqrt{N}} = \frac{537.07}{\sqrt{10}} = 169.84 \quad kJ/kg
+    \end{array}
+\end{equation}
+so the overall uncertainty is 169.84 kJ/kg if the mean value of the sample of measurements is taken as the heating value.
+If a single measurement of heating value is to be taken,then 
+\begin{equation}
+    \begin{array}{rcl}
+           U_{\bar{d}} & = & \sqrt{B^2+(t_{\mu,\rho} \rho)^2} = \sqrt{1250^2+(t_{\mu,\rho} 169.84)^2}= 1307.8 \quad kJ/kg
+    \end{array}
+\end{equation}
+where, $ t = 2.265$.
+The overall uncertainty is 1307.8 kJ/kg. 
+\section{Problem 2}
+\begin{defi2}
+Find relative uncertainty values
+\end{defi2}
+\begin{equation}
+    \begin{array}{rcl}
+           \frac{u_{\mu}}{\mu} & = & \frac{0.02}{3.00}   =  0.67 \quad \% \\
+           \frac{u_{V}}{V} & = & \frac{0.05}{1.23}       =  4.07 \quad \% \\
+           \frac{u_{L}}{L} & = & \frac{0.02}{0.50}       =  4.00 \quad \% \\
+           \frac{u_{B}}{B} & = & \frac{0.001}{0.02}      =  0.5 \quad \% \\
+%           \frac{u_{\theta}}{\theta} & = & \frac{1}{30}  =  3.33 \quad \% 
+    \end{array}
+\end{equation}
+Denote $N = sin \theta$, the relative uncertainty for N is: 
+\begin{equation}
+    \begin{array}{rcl}
+          u  =  |cos \, \theta |u_x  &=&  |cos \, \frac{\pi}{6}|\frac{\pi}{180} = 0.015 \\    
+          u_r   =  \frac{u}{sin \frac{\pi}{6}} & =&  \frac{0.015}{0.5} =3 \quad \%
+%          \frac{u}{sin} & = & \frac{0.001}{0.02} = 3 \quad \%
+    \end{array}
+\end{equation}
+\begin{defi2}
+Find relative uncertainty values of mass
+\end{defi2}
+\begin{equation}
+    \begin{array}{rcl}
+          m  =  \frac{\mu V L^2}{Bgsin\theta} = \mu V L^2 g^{-1}B^{-1} N^{-1}    
+    \end{array}
+\end{equation}
+where N = sin $\theta$.
+\begin{equation}
+    \begin{array}{rcl}
+          \frac{u_m}{m}  = \pm \sqrt{(1 \times \frac{u_{\mu}}{\mu})^2+(1 \times \frac{u_V}{V})^2+(2 \times \frac{u_L}{L})^2+(-1\times \frac{u_B}{B})^2 + (-1 \times \frac{u_N}{N})^2 } = \pm 10.72 \quad \%  
+    \end{array}
+\end{equation}
+The percentage relative uncertainty in the measured mass is $\pm 10.72 \%$.
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
