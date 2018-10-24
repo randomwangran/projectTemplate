@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --account=def-dting
+#SBATCH --ntasks=24
+#SBATCH --mem=31G
+#SBATCH --time=05-00:00
+
+module purge
+module load openfoam/4.1
+
+decomposePar > log.decomposePar 2>&1
+mpirun -np 24 $1 -parallel > log.pisoFoam 2>&1
