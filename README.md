@@ -15,9 +15,6 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 
 ## auxiliary scripts
 
-put the follwoing functions in your `~/.bashrc`:
-
-
 `ranCloneTemplate`:
 
 ```ranCloneTemplate
@@ -32,7 +29,7 @@ cp $1.bak/.gitignore $1
 rm -rf $1.bak
 ```
 
-### A typical `.bashrc`:
+## A typical `.bashrc`:
 
 ```sh
 alias check='squeue -u superran'
