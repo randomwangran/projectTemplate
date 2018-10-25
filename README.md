@@ -12,7 +12,6 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 
 # Requirments
 
-
 ## auxiliary scripts
 
 `ranCloneTemplate`:
@@ -29,11 +28,10 @@ cp $1.bak/.gitignore $1
 rm -rf $1.bak
 ```
 
-## A typical `.bashrc`:
+## a typical `.bashrc` file:
 
 ```sh
 alias check='squeue -u superran'
-
 
 function Allrun()
 {   
@@ -58,7 +56,7 @@ function Allrun()
 
 function catAllrun()
 {
-    grep -v "^[[:space:]]*$" Allrun.sh | grep -v '^ *#' |cat
+    grep -v "^[[:space:]]*$" Allrun.sh | grep -v '^ *#' | cat
 }
 
 function catTodayAllrunLog()
@@ -68,12 +66,10 @@ function catTodayAllrunLog()
 
 ```
 
-
-
 # Usage
 
 ## executing jobs
-Put all the commends in the `Allrun.sh` script and then executed `Allrun.sh` by typing:
+write all the commends in the `Allrun.sh` script ( `workingFolder/Allrun.sh` ) and then executed `Allrun.sh` by typing:
 
 ```
 sh ./Allrun.sh
@@ -85,5 +81,9 @@ sh ./Allrun.sh
 
 ```
 check
+## after jobinfo show up, typing:
 find | grep "JOBID"
 ```
+
+## Thoughs
+### when to use `branch`?
