@@ -17,7 +17,27 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 
 put the follwoing functions in your `~/.bashrc`:
 
+
+`ranCloneTemplate`:
+
+```ranCloneTemplate
+git clone git@github.com:randomwangran/projectTemplate.git
+git clone git@github.com:randomwangran/$1.git
+cd ./projectTemplate &&
+rm -rf .git
+cd ..
+mv projectTemplate $1.bak
+cp -rf $1.bak/* $1
+cp $1.bak/.gitignore $1
+rm -rf $1.bak
+```
+
+### A typical `.bashrc`:
+
 ```sh
+alias check='squeue -u superran'
+
+
 function Allrun()
 {   
     echo "You will execute the following command?" &&
@@ -48,27 +68,25 @@ function catTodayAllrunLog()
 {
     grep -w "$(date "+%a %b %d")" log.Allrun
 }
+
 ```
 
-`ranCloneTemplate`:
-
-```ranCloneTemplate
-git clone git@github.com:randomwangran/projectTemplate.git
-git clone git@github.com:randomwangran/$1.git
-cd ./projectTemplate &&
-rm -rf .git
-cd ..
-mv projectTemplate $1.bak
-cp -rf $1.bak/* $1
-cp $1.bak/.gitignore $1
-rm -rf $1.bak
-```
 
 
 # Usage
 
+## executing jobs
 Put all the commends in the `Allrun.sh` script and then executed `Allrun.sh` by typing:
 
 ```
 sh ./Allrun.sh
+```
+
+## monitoring jobs
+
+### locating running jobs PATH
+
+```
+check
+find | grep "JOBID"
 ```
