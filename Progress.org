@@ -1,0 +1,54 @@
+#+TITLE: PROJECT TITLE
+
+* Milestone:
+** <2018-10-28 Sun> 
+* Literature research
+** experimental reference
+* Pre-processing
+** TODO build up new grid
+** TODO build 2D gird with parameter
+** TODO build 3D grid 
+** TODO analysing timestep
+** document parallel testing
+*** effect of CPU and memory
+** TODO obtained more roundness grid
+** TODO obtained the rotation grid
+** TODO about OpenFOAM
+*** TODO build the latest version
+* Solving
+** TODO issue: one job extremely slow
+* Post-processing
+** TODO gather simulation running time
+*** demand
+    
+   xxx 
+
+   input:
+
+   - void
+
+   output:
+
+   - text
+
+     "State   ClockTime  NumberOfIteration Directory"
+
+*** result
+
+    checked on <2018-11-17 Sat>
+
+    roundness4Re_10000
+    It cost: 40.790 hours to finish.
+    
+* References
+* Appendix
+** Branches info
+
+   - master
+
+   - branch-A
+
+** Current running states
+
+
+** Parallel testing head file
