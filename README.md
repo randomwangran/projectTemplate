@@ -77,13 +77,40 @@ sh ./Allrun.sh
 
 ## monitoring jobs
 
-### locating running jobs PATH
+### check running jobs info
 
 ```
-check
-## after jobinfo show up, typing:
-find | grep "JOBID"
+squeue -o "%.18i %.30j %.2t %.10M %.9m %.9C %.6D" -u USERNAME
 ```
 
-## Thoughs
-### when to use `branch`?
+### check finished jobs info
+
+```
+ sacct -S 2018-10-01 -u USERNAME  --format=JobID,Jobname,state,time,start,end,elapsed,nnodes,ncpus | grep -vE '(.exte+|batch|orted)'
+
+```
+
+## Branch
+### structure of 'Master'
+    
+    On 'master', all the preparing scripts are on this branch. Only update document ( Progress.org ) on master.
+    
+    The productive jobs are only running on the 'branch'.
+    
+### structure of 'branch'
+    
+    For example, when the productive jobs are running on 'Branch-xx', only leave the folder working structures:
+    
+    ```
+    .
+    ├── preparingFolder
+    │   ├── postProcessingScript
+    │   ├── prepareScript
+    │   ├── preparingCases
+    │   └── runningScript
+    └── workingFolder
+        ├── Allrun.sh
+        ├── log.Allrun
+        ├── XX-A
+        └── XX-B
+    ```
