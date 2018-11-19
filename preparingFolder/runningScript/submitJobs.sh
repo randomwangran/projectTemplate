@@ -8,6 +8,12 @@ do
 
        echo Entering into $f &&
 
-       sbatch --job-name=CdVerseRePreRun --output=CdVerseRePreRun_%N_%J.log ./decomposedAndSubmit.pbs pisoFoam
+       echo $ > tmp
+       ReynoldsNum=`grep -oP '(?<=Re_)[0-9]+' tmp`
+       
+       sbatch --job-name=purposeOfJobs_$(ReynoldsNum) --output=roundness4Re_$(ReynoldsNum)_%N_%J.log ./decomposedAndSubmit.pbs pisoFoam &&
+
+       rm tmp
        sleep 2
+       cd ..
 done;
