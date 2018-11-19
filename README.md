@@ -17,6 +17,10 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 
 # Requirments
 
+- GNU/Emacs v26.1
+- Magit
+- Git
+
 ## auxiliary scripts
 
 `ranCloneTemplate`:
