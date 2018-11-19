@@ -73,3 +73,14 @@
 *.toc
 _region_*
 *#
+
+# icem
+*.msh
+*.uns
+*.uns.bak
+
+# back up files
+*.zip
+
+# ps
+*.psd
