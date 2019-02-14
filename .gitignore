@@ -2,8 +2,6 @@
 #*
 .#*
 *.obj
-*.png
-*.msh
 *~
 *.swp
 */postProcessing/
@@ -17,7 +15,6 @@
 
 # latex related
 *.xml
-*.pdf
 *.tex~
 *.aux
 *.tex~
@@ -37,6 +34,3 @@ _region_*
 
 # back up files
 *.zip
-
-# ps
-*.psd
