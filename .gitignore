@@ -85,4 +85,4 @@ _region_*
 # ps
 *.psd
 
-./*/*.psd
+!./*/*.psd
