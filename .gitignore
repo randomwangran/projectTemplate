@@ -1,63 +1,19 @@
-# ignore deepth 1
 *~
 #*
 .#*
-/*/*.obj
-/*/*.png
-/*/*.msh
-/*/*#
-/*/*~
-/*/*/*~
-/*/*/*#
-/*/*/*.swp
-/*/*.out
-/*/postProcessing/
-/*/processor*/
-/*/test.pbs.*
-/*/*.gz
-/*/constant/polyMesh/
-/*/[1-9]*
-/*/*.[1-9]*
-
-# ignore deepth 2
-/*/.#*
-/*/*/*.obj
-/*/*/*.png
-/*/*/*.msh
-/*/*/*#
-/*/*/*~
-/*/*/*/*~
-/*/*/*/*#
-/*/*/*/*.swp
-/*/*/*.out
-/*/*/postProcessing/
-/*/*/processor*/
-/*/*/test.pbs.*
-/*/*/*.gz
-/*/*/constant/polyMesh/
-/*/*/[1-9]*
-/*/*/*.[1-9]*
-/*/*/log.pisoFoam
-
-# ignore deepth 3
-/*/*/*/.#*
-/*/*/*/*.obj
-/*/*/*/*.png
-/*/*/*/*.msh
-/*/*/*/*#
-/*/*/*/*~
-/*/*/*/*/*~
-/*/*/*/*/*#
-/*/*/*/*/*.swp
-/*/*/*/*.out
-/*/*/*/postProcessing/
-/*/*/*/processor*/
-/*/*/*/test.pbs.*
-/*/*/*/*.gz
-/*/*/*/constant/polyMesh/
-/*/*/*/[1-9]*
-/*/*/*/*.[1-9]*
-/*/*/*/log.pisoFoam
+*.obj
+*.png
+*.msh
+*~
+*.swp
+*/postProcessing/
+*/processor*/
+*/*.pbs.*
+*.gz
+*/constant/polyMesh/
+[1-9]*
+*.[1-9]*
+*/*/log.pisoFoam
 
 # latex related
 *.xml
@@ -84,5 +40,3 @@ _region_*
 
 # ps
 *.psd
-
-!./*.psd
