@@ -1,23 +1,33 @@
-*~
-#*
-.#*
+## 
 *.obj
-*~
 *.swp
-*/postProcessing/
-*/processor*/
-*/*.pbs.*
-*.gz
-*/constant/polyMesh/
+
+
+## mesh
+
+processor*
+polyMesh
+
+
+## post process
+
+postProcessing
 [1-9]*
 *.[1-9]*
-*/*/log.pisoFoam
+*.dat
 
-# latex related
+
+## emacs
+
+*~
+.#*
+*#
+
+
+## latex
+
 *.xml
-*.tex~
 *.aux
-*.tex~
 *.out
 *.lot
 *.aux
@@ -25,12 +35,16 @@
 *.log
 *.toc
 _region_*
-*#
 
-# icem
+
+## icem
 *.msh
 *.uns
 *.uns.bak
 
-# back up files
+
+## back up
+
+
 *.zip
+*.gz
