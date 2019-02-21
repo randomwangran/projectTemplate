@@ -17,8 +17,9 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 
 # Requirments
 
-- GNU/Emacs v26.1
-- Magit
+- [GNU/Emacs](https://www.gnu.org/software/emacs/download.html) v26.1
+- [Magit](https://github.com/magit/magit)
+- [Projectilie](https://github.com/bbatsov/projectile)
 - Git
 
 ## auxiliary scripts
