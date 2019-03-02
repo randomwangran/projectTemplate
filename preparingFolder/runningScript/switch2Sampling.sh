@@ -5,7 +5,7 @@ basdir="$(dirname "$curdir")"
 
 for f in $curdir/*
 	 
-do [ -d $f -a $f != "$curdir/Allrun" -a $f != "$curdir/Re14E4LSDense" -a $f != "$curdir/TSRe14E4CoasraMesh" ] &&
+do [ -d $f -a $f != "$curdir/Allrun" -a $f != "$curdir/log.Allrun" -a $f != "$curdir/Re14E4LSDense" -a $f != "$curdir/TSRe14E4CoasraMesh" ] &&
        
        cd "$f" &&
 
