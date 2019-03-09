@@ -8,5 +8,8 @@
 # sh ../preparingFolder/prepareScript/delete.sh
 # sh ../preparingFolder/prepareScript/cpScript.sh
 # sh ../preparingFolder/prepareScript/cpConvertedMesh.sh
-sh ../preparingFolder/runningScript/submitJobs.sh
+# sh ../preparingFolder/runningScript/submitJobs.sh
 
+## change running status
+
+sh ../preparingFolder/runningScript/switch2Sampling.sh
