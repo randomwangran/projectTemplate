@@ -8,12 +8,14 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 - execute clone script:
     
     `ranCloneTemplate myProject`
+
 - open emacs on a linux platform
 - stage all the files and commit
-- push 1st commit using ( with magit )
+- push 1st commit using (within magit)
     
-    'P u'    
-- clear this project template according to your needs
+    'P u'
+
+- clear this template according to your needs
 
 # Requirments
 
@@ -45,7 +47,7 @@ alias check='squeue -u superran'
 
 function Allrun()
 {   
-    echo "You will execute the following command?" &&
+    echo "Are you sure to execute the following commands?" &&
     
     catAllrun &&
 
