@@ -1,3 +1,7 @@
+;;; openfoam.el --- personal tweak with OpenFOAM. -*- lexical-binding: t -*-
+
+;; This file is part of GNU OpenFOAM.
+
 ;; add dummy file for paraview visulization
 (eval-after-load 'dired
   '(progn
