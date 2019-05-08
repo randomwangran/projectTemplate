@@ -12,7 +12,7 @@ polyMesh
 
 ## post process
 
-*.dat
+[0-9]*
 
 
 ## emacs
@@ -36,12 +36,14 @@ _region_*
 
 
 ## icem
+
 *.msh
 *.uns
 *.uns.bak
 
 
 ## back up
+
 *.tar
 *.zip
 *.gz
