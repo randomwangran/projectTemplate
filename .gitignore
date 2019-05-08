@@ -45,6 +45,6 @@ _region_*
 
 ## back up
 
-
+*.tar
 *.zip
 *.gz
