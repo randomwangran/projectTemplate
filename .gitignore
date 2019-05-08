@@ -1,4 +1,5 @@
-## 
+##
+
 *.obj
 *.swp
 
@@ -11,9 +12,6 @@ polyMesh
 
 ## post process
 
-postProcessing
-[1-9]*
-*.[1-9]*
 *.dat
 
 
@@ -44,7 +42,6 @@ _region_*
 
 
 ## back up
-
 *.tar
 *.zip
 *.gz
