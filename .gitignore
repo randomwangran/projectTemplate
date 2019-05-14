@@ -47,3 +47,7 @@ _region_*
 *.tar
 *.zip
 *.gz
+
+## Constantly updated doc
+
+/Progress.pdf
