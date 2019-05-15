@@ -1,29 +1,26 @@
-##
-
+#######################
 *.obj
 *.swp
 
 
-## mesh
-
+####################### mesh
 processor*
 polyMesh
 
 
-## post process
-
+####################### post process
 [0-9]*
+[0-9]*.*/
+[0-9]*/
 
 
-## emacs
-
+####################### emacs
 *~
 .#*
 *#
 
 
-## latex
-
+####################### latex
 *.xml
 *.aux
 *.out
@@ -35,24 +32,21 @@ polyMesh
 _region_*
 
 
-## icem
-
+####################### icem
 *.msh
 *.uns
 *.uns.bak
 
 
-## back up
-
+####################### back up
 *.tar
 *.zip
 *.gz
 
-## Constantly updated doc
-
+####################### Constantly updated doc
 /Progress.pdf
 /Progress.tex
 
-##
 
+#######################
 U
