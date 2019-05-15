@@ -23,7 +23,7 @@ A workflow to execute and document text based simulations configurations and res
     
 - [Magit](https://github.com/magit/magit)
 
-    All the git commends;
+    All the git commands;
     
 - [Projectilie](https://github.com/bbatsov/projectile)
 
