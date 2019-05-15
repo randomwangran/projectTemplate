@@ -28,12 +28,14 @@ polyMesh
 *.aux
 *.out
 *.lot
+*.bbl
+*.blg
 *.aux
 *.lof
 *.log
 *.toc
 _region_*
-
+**/auto
 
 ## icem
 
