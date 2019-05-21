@@ -3,6 +3,10 @@
 *.swp
 
 
+####################### pre process
+*.skp
+
+
 ####################### mesh
 processor*
 polyMesh
@@ -12,6 +16,10 @@ polyMesh
 [0-9]*
 [0-9]*.*/
 [0-9]*/
+U
+*.dat
+*.csv
+log.*
 
 
 ####################### emacs
@@ -34,6 +42,7 @@ polyMesh
 _region_*
 **/auto
 
+
 ####################### icem
 *.msh
 *.uns
@@ -45,10 +54,23 @@ _region_*
 *.zip
 *.gz
 
+
 ####################### Constantly updated doc
 /Progress.pdf
 /Progress.tex
+*.doc
 
 
-#######################
-U
+####################### figures
+*.eps
+*.pdf
+*.png
+*.mp4
+*.psd
+
+
+
+
+
+
+
