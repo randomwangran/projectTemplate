@@ -1,7 +1,5 @@
 A workflow to execute and document text based simulations configurations and results using shell scripts and Git.
 
-Here's an example using this [template](https://github.com/randomwangran/lengthEffect/tree/master/workingFolder).
-
 # Workflow example
 
 - create a repository named `myProject` on GitHub
@@ -9,7 +7,7 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
     
     `ranCloneTemplate myProject`
 
-- open emacs on a linux platform
+- open Emacs on a linux platform
 - stage all the files and commit
 - push 1st commit using (within magit)
     
@@ -20,9 +18,18 @@ Here's an example using this [template](https://github.com/randomwangran/lengthE
 # Requirments
 
 - [GNU/Emacs](https://www.gnu.org/software/emacs/download.html) v26.1
+
+    Operating system;
+    
 - [Magit](https://github.com/magit/magit)
+
+    All the git commands;
+    
 - [Projectilie](https://github.com/bbatsov/projectile)
-- Git
+
+    Finding files; Jumping between the shell scripts;
+  
+- Git >2.12
 
 ## auxiliary scripts
 
@@ -111,7 +118,13 @@ squeue -o "%.18i %.30j %.2t %.10M %.9m %.9C %.6D" -u USERNAME
     
 ### structure of 'branch'
     
-    For example, when the productive jobs are running on 'Branch-xx', only leave the folder working structures:
+    For example, when the productive jobs are running on 'Branch-xx',
+    only leave the folder working structures:
+    
+    ```sh
+    git clone --single-branch --branch <branchname> git@github.com:randomwangran/projectTemplate.git
+    ```
+    
     
     ```
     .
