@@ -10,4 +10,4 @@ module load openfoam/4.1
 branchName=$(git status | sed -En "s/On branch ([a-Z]*)/\1/p")
 submitDate=$(date "+%a-%b-%d")
 
-checkMesh > log.$(branchName)-$(submitDate)-checkMesh
+checkMesh > log.checkMesh-$branchName-$submitDate
