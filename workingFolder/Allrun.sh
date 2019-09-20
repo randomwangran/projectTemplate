@@ -12,4 +12,8 @@
 
 ## change running status
 
-sh ../preparingFolder/runningScript/switch2Sampling.sh
+#  sh ../preparingFolder/runningScript/switch2Sampling.sh
+
+## do a checkMesh for all working folder
+sh ../preparingFolder/copyScript/checkMesh.sh
+sh ../preparingFolder/runningScript/runScript.sh
