@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --account=def-dting
+#SBATCH --ntasks=1
+#SBATCH --mem=31G
+#SBATCH --time=2:00:00
+
+module purge
+module load openfoam/4.1
+
+branchName=$(git status | sed -En "s/On branch ([a-Z]*)/\1/p")
+submitDate=$(date "+%a-%b-%d")
+
+checkMesh > log.$(branchName)-$(submitDate)-checkMesh
