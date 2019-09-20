@@ -16,4 +16,4 @@
 
 ## do a checkMesh for all working folder
 sh ../preparingFolder/copyScript/checkMesh.sh
-sh ../preparingFolder/runningScript/runScript.sh
+sh ../preparingFolder/runningScript/runCheckMesh.sh
