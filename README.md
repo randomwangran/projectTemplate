@@ -1,16 +1,19 @@
-A workflow to execute and document text based simulations configurations and results using shell scripts and Git.
+The mission-critical enterprise, game changer, best-of-breed
+bookmarklet that will empower you to evaluate the high impact of
+scientific-driven text on any real world, cultivating process-centric
+innovation and out-of-the-box thinking.
 
 # Workflow example
 
 - create a repository named `myProject` on GitHub
 - execute clone script:
-    
+
     `ranCloneTemplate myProject`
 
 - open Emacs on a linux platform
 - stage all the files and commit
 - push 1st commit using (within magit)
-    
+
     'P u'
 
 - clear this template according to your needs
@@ -20,15 +23,15 @@ A workflow to execute and document text based simulations configurations and res
 - [GNU/Emacs](https://www.gnu.org/software/emacs/download.html) v26.1
 
     Operating system;
-    
+
 - [Magit](https://github.com/magit/magit)
 
     All the git commands;
-    
+
 - [Projectilie](https://github.com/bbatsov/projectile)
 
     Finding files; Jumping between the shell scripts;
-  
+
 - Git >2.12
 
 ## auxiliary scripts
@@ -53,9 +56,9 @@ rm -rf $1.bak
 alias check='squeue -u superran'
 
 function Allrun()
-{   
+{
     echo "Are you sure to execute the following commands?" &&
-    
+
     catAllrun &&
 
     while true; do
@@ -66,11 +69,11 @@ function Allrun()
         * ) echo "Please answer yes or no.";;
     esac
     done &&
-    
+
     echo "At time: $(date), following is what you just submit: " &&
 
     catTodayAllrunLog
-    
+
 }
 
 function catAllrun()
@@ -111,21 +114,21 @@ squeue -o "%.18i %.30j %.2t %.10M %.9m %.9C %.6D" -u USERNAME
 
 ## Branch
 ### structure of 'Master'
-    
+
     On 'master', all the preparing scripts are on this branch. Only update document ( Progress.org ) on master.
-    
+
     The productive jobs are only running on the 'branch'.
-    
+
 ### structure of 'branch'
-    
+
     For example, when the productive jobs are running on 'Branch-xx',
     only leave the folder working structures:
-    
+
     ```sh
     git clone --single-branch --branch <branchname> git@github.com:randomwangran/projectTemplate.git
     ```
-    
-    
+
+
     ```
     .
     ├── preparingFolder
