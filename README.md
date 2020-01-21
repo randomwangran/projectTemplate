@@ -1,7 +1,7 @@
-The mission-critical enterprise, game changer, best-of-breed
-bookmarklet that will empower you to evaluate the high impact of
-scientific-driven text on any real world, cultivating process-centric
-innovation and out-of-the-box thinking.
+The mission-critical enterprise, game changer, best-of-breed framework
+that will empower you to evaluate the high impact of scientific-driven
+text on any real world, cultivating process-centric innovation and
+out-of-the-box thinking.
 
 # Workflow example
 
