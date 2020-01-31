@@ -1,7 +1,11 @@
-T (talent) E (element) M (method)
+This is how I issue the instruction to computers. The main reason why
+I do this is because I want to track every single command to the
+process.
+
+History makes man wise. More histories make man wiser.
 
 
-# Workflow example
+# How
 
 - create a repository named `myProject` on GitHub
 - execute clone script:
