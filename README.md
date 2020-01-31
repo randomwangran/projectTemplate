@@ -130,8 +130,14 @@ squeue -o "%.18i %.30j %.2t %.10M %.9m %.9C %.6D" -u USERNAME
     git clone --single-branch --branch <branchname> git@github.com:randomwangran/projectTemplate.git
     ```
 
+    For another example, do this to do the typing:
+
+    ```sh
+    git clone --single-branch --branch DOC git@github.com:randomwangran/projectTemplate.git
 
     ```
+
+    ```sh
     .
     ├── preparingFolder
     │   ├── postProcessingScript
