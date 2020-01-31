@@ -1,5 +1,0 @@
-* runBash.bat
-  
-  If you have 2D mesh, to build 3D mesh just prepare a *.rpl file
-  usuing ICEM/GUI then execute this runBash.bat, you will get a 3D
-  mesh within the currentFolder/3D

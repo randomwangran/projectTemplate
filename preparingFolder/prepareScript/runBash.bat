@@ -1,1 +1,0 @@
-"C:\Program Files\ANSYS Inc\v170\icemcfd\win64_amd\bin\icemcfd" -script project.rpl
