@@ -3,10 +3,10 @@
 curdir=$(pwd)
 
 for f in $curdir/*
-do 
+do
        cd "$f" &&
 
        echo Entering into $f &&
 
-       cp -rf ../../preparingFolder/preparingCases/oriCaseFolder/constant ./
+       cp -rf ../../preparingFolder/prepareCases/oriCaseFolder/constant ./
 done;
