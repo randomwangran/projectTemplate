@@ -5,7 +5,9 @@
 
 ####################### pre process
 *.skp
-
+*.dwg
+*.dwl
+*.dwl2
 
 ####################### mesh
 processor*
