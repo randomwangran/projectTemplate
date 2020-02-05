@@ -49,6 +49,7 @@ cd ..
 mv projectTemplate $1.bak
 cp -rf $1.bak/* $1
 cp $1.bak/.gitignore $1
+cp $1.bak/.planck $1
 rm -rf $1.bak
 ```
 
