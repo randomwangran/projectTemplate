@@ -3,10 +3,12 @@
 curdir=$(pwd)
 
 for f in $curdir/*
-do 
+do
        cd "$f" &&
 
        echo Entering into $f &&
 
-       cp -f ../../preparingFolder/prepareScript/decomposedAndSubmit.pbs .
+       ## copy transportProperties turbulenceProperties to a case folder without constant
+       cp -rf ../../preparingFolder/prepareCases/Meshes/constant ./
+
 done;
