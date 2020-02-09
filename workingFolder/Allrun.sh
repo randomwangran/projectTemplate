@@ -20,3 +20,6 @@
 ## do a checkMesh for all working folder
 sh ../preparingFolder/copyScript/checkMesh.sh
 sh ../preparingFolder/runningScript/runCheckMesh.sh
+
+## check TCP issue
+sh ../preparingFolder/runningScript/checkTCP.sh
