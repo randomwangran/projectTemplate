@@ -1,6 +1,7 @@
 #!bin/bash
 
-## example of using this template:
+## if the running require multiple branches to run, make sure the
+## submission is after ENTERING the proper working directory
 
 # sh ../preparingFolder/prepareScript/buildUpBase.sh
 
