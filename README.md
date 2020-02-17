@@ -4,6 +4,8 @@ process.
 
 History makes man wise. More histories make man wiser.
 
+[With this technology, your research becomes more responsible and reproducible, for both the community and yourself.](https://www.zhengwenjie.net/configuration/)
+
 
 # How
 
