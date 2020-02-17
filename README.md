@@ -1,10 +1,12 @@
+[With this technology, your research becomes more responsible and reproducible, for both the community and yourself.](https://www.zhengwenjie.net/configuration/)
+
+
 This is how I issue the instruction to computers. The main reason why
 I do this is because I want to track every single command to the
 process.
 
 History makes man wise. More histories make man wiser.
 
-[With this technology, your research becomes more responsible and reproducible, for both the community and yourself.](https://www.zhengwenjie.net/configuration/)
 
 
 # How
