@@ -2,14 +2,11 @@ My teacher_ R.P. Feynman once said
 
 > The first principle is that you must not fool yourself—and you are the **easiest** person to fool.
 
+My friend_ once said:
+
 [With this technology, your research becomes more responsible and reproducible, for both the community and yourself.](https://www.zhengwenjie.net/configuration/)
 
-
-This is how I issue the instruction to computers. The main reason why
-I do this is because I want to track every single command to the
-process.
-
-History makes man wise. More histories make man wiser.
+So, I try my best to fight with myself with my best effort everytime I do research.
 
 Be honest to yourself is hard, then let this software to help you.
 
