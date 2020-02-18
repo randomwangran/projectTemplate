@@ -38,7 +38,7 @@ History makes man wise. More histories make man wiser.
 
     Finding files; Jumping between the shell scripts;
 
-- Git >2.12
+- [Git](https://git-scm.com/download/win) >2.12
 
 ## auxiliary scripts
 
