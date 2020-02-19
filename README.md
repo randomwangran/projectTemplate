@@ -8,7 +8,7 @@ My friend_ once said:
 
 So, I try my best to fight with myself with my best effort everytime I do research.
 
-Be honest to yourself is hard, then let this software to help you.
+Be honest to yourself is hard, let this software to help you.
 
 Then you can truly contribute the important research to the world.
 
