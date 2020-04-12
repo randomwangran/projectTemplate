@@ -8,7 +8,10 @@
 
 
 find . -maxdepth 1  -type d -regex "./[0-9]+*\.?[0-9]+" > log.t
+## https://stackoverflow.com/questions/9638176/remove-part-of-string-from-each-line/57672187#57672187
 <log.t rev | cut -d/ -f1 | rev > log.tt
+
+## https://stackoverflow.com/questions/30988586/creating-an-array-from-a-text-file-in-bash/30988704#30988704
 mapfile -t reTime < log.tt
 
 cnt=${#reTime[@]}
